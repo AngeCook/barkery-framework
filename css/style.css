@@ -36,6 +36,7 @@ CSS TABLE OF CONTENTS
     # SMOOTH SCROLL
 
 # CUSTOM STYLING
+    # SECTION COLORS
 
 
 --------------------------------
@@ -71,9 +72,9 @@ CSS TABLE OF CONTENTS
     --color-siteheader-background: transparent;
     --color-siteheader-links: var(--color-text-headings);
 
-    --color-hero-background: rgb(100 100 100);
-    --color-hero-text: rgb(255 255 255 / .8);
-    --color-hero-headings: rgb(255 255 255 / 1);
+    --color-hero-background:#DFD0B8;
+    --color-hero-text:#153448;
+    --color-hero-headings:#153448;
 
     --color-sitefooter-background: rgb(100 100 100);
     --color-sitefooter-text: rgb(255 255 255 / .8);
@@ -324,7 +325,7 @@ body {
     @media (min-width: 768px) {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     }
 
     /* ADD SOME GENERAL SPACING AROUND THE HEADER */
@@ -348,9 +349,13 @@ body {
         /* PLACE LOGO ON TOP OF DRAWER MENU */
         /* LOGO WILL SCROLL AWAY - NEED TO ADD SUPPORT FOR FIXED */
         /* position: relative; */
-        z-index: 100;
+        /* z-index: 100; */
         
-
+        /* REMOVE THE SPACE UNDER THE LOGO MARK */
+        img, svg {
+            display: block;
+            max-width: 100px;
+        }
         /* REMOVE MARGINS AND RESIZE H1 INSIDE HEADER */
         h1 {
             font-size: 2em;
@@ -547,7 +552,7 @@ body {
 
     /* ADD MORE SPACE ON TOP FOR THE ABSOLUTE HEADER */
     & + .site-main > .hero {
-        padding-top: calc(4em + var(--unit-large));
+        padding-top: calc(8em + var(--unit-large));
     }
 
 }
@@ -647,7 +652,22 @@ section {
         }
 
     }
+}
 
+
+/* CENTERED CARDS */
+
+.centered-card-group {
+    display: flex;
+    justify-content: center;
+    gap: var(--unit-small);
+   
+    .centered-card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: var(--unit-small);
+        min-width: 232px;
+    }
 }
 
 
