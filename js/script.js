@@ -18,3 +18,6 @@ toggleMenuLinks.forEach((el) => {
 }
 
 });
+
+//SWIPER STYLING (PHOTO CAROUSEL)
+
