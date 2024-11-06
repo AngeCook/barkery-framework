@@ -20,7 +20,7 @@
     <header class="site-header on-top-of-hero">
         <div class="site-logo">
             <a href="index.html">
-                <img src="img/logodarksimple.svg" width="250" height="200" alt="The Barkery Logo Fresh Baked Dog Treats Since 2020">
+                <img src="img/logolightsimple.svg" width="250" height="200" alt="The Barkery Logo">
             </a>
             <h1 class="hide-visually"><a href="index.html">The Barkery</a></h1>
         </div>
@@ -37,30 +37,14 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#section1">Section One</a></li>
+                <li><a href="#section1">Cart</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="site-main">
 
-        <!-- <section class="hero">
-            <div class="container">
-
-                <div class="row swapped">
-                    <div class="one-half">
-                        <img src="img/placeholder-2000x1500.png" alt="Hero Image Placeholder" width="2000" height="1500">
-                    </div>
-                    <div class="one-half">
-                        <h1>Barkery FrameworkXX </h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non iste consectetur vel excepturi. Ipsa eveniet quo eum odit rerum? Neque!</p>
-                        <a href="#" class="button light">Default Button</a>
-                        <a href="#section1" class="button light">Go to Section 1</a>
-                    </div>
-                </div>
-
-            </div>
-        </section> -->
+ 
 
         <section class="hero">
             <!-- CAROUSEL IN BODY -->
@@ -70,53 +54,59 @@
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide rotate-left-10">
-                  <img src="http://fpoimg.com/300x250?text=Preview" alt="placeholder">
+                  <img src="img/doghouse.png" alt="doghouse cookier">
                 </div>
                 <div class="swiper-slide rotate-right-15">
-                  <img src="http://fpoimg.com/300x250?text=Preview" alt="placeholder">
+                  <img src="img/greta.png"alt="white dog">
                 </div>
                 <div class="swiper-slide rotate-left-10">
-                  <img src="http://fpoimg.com/300x250?text=Preview" alt="placeholder">
+                  <img src="img/birthday.png" alt="birthday cookies">
                 </div>
                 <div class="swiper-slide rotate-right-15">
-                  <img src="http://fpoimg.com/300x250?text=Preview" alt="placeholder">
+                  <img src="img/pineapple.png" alt="pineapple cookie">
                 </div>
                 <div class="swiper-slide rotate-left-15">
-                  <img src="http://fpoimg.com/300x250?text=Preview" alt="placeholder">
+                  <img src="img/juno.png" alt="brown dog">
                 </div>
                 <div class="swiper-slide rotate-right-10">
-                  <img src="http://fpoimg.com/300x250?text=Preview" alt="placeholder">
+                  <img src="img/shark.png" alt="round cookie with shark image">
                 </div>
-                <div class="swiper-slide rotate-left-15">
-                  <img src="http://fpoimg.com/300x250?text=Preview" alt="placeholder">
-                </div>
-                <div class="swiper-slide rotate-right-10">
-                  <img src="http://fpoimg.com/300x250?text=Preview" alt="placeholder">
-                </div>
-                <div class="swiper-slide rotate-left-15">
-                  <img src="http://fpoimg.com/300x250?text=Preview" alt="placeholder">
-                </div>
-                ...
+               
+            
               </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-          
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-          
-            </div>
-          </section>
-          
 
+            </div>
+          
+        </section>
+       
+        <section class="about">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="two-thirds">
+                        
+                        <p>The Barkery is a Veteran owned dog bakery specializing in baking dog treats with human-grade, locally sourced ingredients. Check out our carefully crafted dog cookies to show your pup some love!</p>
+            
+                    </div>
+                    <div class="one-third">
+                        <img src="img/dogillustration1.svg" alt="dog illustration">
+                    </div>
+                 
+                </div>
+
+            </div>
+        </section>
+
+         
         <section id="section1">
             <div class="container">
 
                 <div class="row">
-                    <div class="one-half">
+                    <div class="one-half observe-me animate-from-upperleft">
                         <img src="img/placeholder-2000x1500.jpg" alt="Placeholder Image">
                     </div>
-                    <div class="one-half">
+                    <div class="one-half observe-me animate-from-lowerright">
                         <h1>This is a Heading</h1>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam at illo soluta ipsam aperiam explicabo eos aliquid doloribus repudiandae totam. <a href="#">This is a link</a></p>
                         <a href="#" class="button">Light Button</a>
@@ -234,24 +224,10 @@
         },
         
         //   MULTIPE SLIDES PER VIEW
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 4,
+        spaceBetween: 0,
+        initialSlide: 2,
 
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
         });
     </script>
 </body>
